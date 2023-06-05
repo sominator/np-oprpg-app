@@ -1,0 +1,19 @@
+﻿  raudio.c
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\external\jar_xm.h(242,1): warning C4005: 'DEBUG': macro redefinition
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\external\jar_xm.h(242,1): message : 'DEBUG' previously declared on the command line
+  rcore.c
+  rglfw.c
+  rmodels.c
+  rshapes.c
+  rtext.c
+  rtextures.c
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\rtextures.c(696,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\rtextures.c(697,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\rtextures.c(787,35): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\rtextures.c(2132,27): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\rtextures.c(2133,27): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\rtextures.c(2135,51): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\rtextures.c(2136,53): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  utils.c
+  Generating Code...
+  raylib.vcxproj -> C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\_bin\Debug\raylib.lib

@@ -1,10 +1,10 @@
 #pragma once
 #include "raylib-cpp-master/include/raylib-cpp.hpp"
-#include "ui.h"
+#include "chaosrifts.h"
 
 struct Input
 {
-	void Update(UI& ui);
+	void Update(ChaosRifts& chaosRifts);
 
 	void Draw();
 };

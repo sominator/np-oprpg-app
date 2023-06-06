@@ -1,5 +1,5 @@
 #include "raylib-cpp-master/include/raylib-cpp.hpp"
-#include "ui.h"
+#include "chaosrifts.h"
 #include "input.h"
 #define RAYGUI_IMPLEMENTATION
 #include "raygui.h"
@@ -12,7 +12,7 @@ int main(void)
 
 	raylib::Window window(screenWidth, screenHeight, "raylib-gui-oprpg-app");
 
-	UI ui;
+	ChaosRifts chaosRifts;
 	
 	Input input;
 	
@@ -22,13 +22,13 @@ int main(void)
 
 	while (!WindowShouldClose())
 	{
-		input.Update(ui);
+		input.Update(chaosRifts);
 
 		BeginDrawing();
 		{
 			window.ClearBackground(BLACK);
 			
-			ui.Draw();
+			chaosRifts.Draw();
 
 			input.Draw();
 		}

@@ -175,6 +175,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\game\src\diceroller.h" />
     <ClInclude Include="..\game\src\input.h" />
     <ClInclude Include="..\game\src\chaosrifts.h" />
   </ItemGroup>

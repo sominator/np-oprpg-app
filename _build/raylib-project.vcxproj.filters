@@ -17,6 +17,7 @@
   <ItemGroup>
     <ClInclude Include="..\game\src\input.h" />
     <ClInclude Include="..\game\src\chaosrifts.h" />
+    <ClInclude Include="..\game\src\diceroller.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\game\src\game.cpp" />

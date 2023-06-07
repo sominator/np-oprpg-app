@@ -1,4 +1,5 @@
 #include "chaosrifts.h"
+#include "diceroller.h"
 
 float panelX = 50.0f;
 float panelY = 60.0f;
@@ -16,25 +17,25 @@ bool dropDownClassEdit = false;
 
 int toggleAuromancerActive = 0;
 
-int attackValue = 0;
+int attackValue = 1;
 bool attackEdit = false;
-int defenseValue = 0;
+int defenseValue = 1;
 bool defenseEdit = false;
-int hackingValue = 0;
+int hackingValue = 1;
 bool hackingEdit = false;
-int healingValue = 0;
+int healingValue = 1;
 bool healingEdit = false;
-int mancyValue = 0;
+int mancyValue = 1;
 bool mancyEdit = false;
-int negotiationValue = 0;
+int negotiationValue = 1;
 bool negotiationEdit = false;
-int stealthValue = 0;
+int stealthValue = 1;
 bool stealthEdit = false;
-int thieveryValue = 0;
+int thieveryValue = 1;
 bool thieveryEdit = false;
-int tumblingValue = 0;
+int tumblingValue = 1;
 bool tumblingEdit = false;
-int vehiclesValue = 0;
+int vehiclesValue = 1;
 bool vehiclesEdit = false;
 
 bool pushChecked = false;
@@ -61,22 +62,13 @@ bool tumblingOutputEdit = false;
 int vehiclesOutput = 0;
 bool vehiclesOutputEdit = false;
 
-int dropDownMissionActive = 0;
-bool dropDownMissionEdit = false;
-
-int dropDownEncounterActive = 0;
-bool dropDownEncounterEdit = false;
-
-int dropDownChaosRiftActive = 0;
-bool dropDownChaosRiftEdit = false;
-
 bool chaosToken1Checked = false;
 bool chaosToken2Checked = false;
 bool chaosToken3Checked = false;
 
 void ChaosRifts::Draw()
 {
-	if (dropDownClassEdit || dropDownMissionEdit) GuiLock();
+	if (dropDownClassEdit) GuiLock();
 
 	GuiSetStyle(DEFAULT, TEXT_SIZE, 22);
 
@@ -101,18 +93,18 @@ void ChaosRifts::Draw()
 	GuiCheckBox(Rectangle{ textX + 195, textY + 155, 15, 15 }, "Push", &pushChecked);
 	GuiCheckBox(Rectangle{ textX + 295, textY + 155, 15, 15 }, "GM +1d6", &extraD6Checked);
 	
-	if (GuiSpinner(Rectangle{ textX + 80, textY + 175, 90, 22}, "Attack ", &attackValue, 0, 10, attackEdit)) attackEdit = !attackEdit;
-	if (GuiSpinner(Rectangle{ textX + 80, textY + 200, 90, 22 }, "Defense ", &defenseValue, 0, 10, defenseEdit)) defenseEdit = !defenseEdit;
-	if (GuiSpinner(Rectangle{ textX + 80, textY + 225, 90, 22 }, "Hacking ", &hackingValue, 0, 10, hackingEdit)) hackingEdit = !hackingEdit;
-	if (GuiSpinner(Rectangle{ textX + 80, textY + 250, 90, 22 }, "Healing  ", &healingValue, 0, 10, healingEdit)) healingEdit = !healingEdit;
-	if (GuiSpinner(Rectangle{ textX + 80, textY + 275, 90, 22 }, "Mancy ", &mancyValue, 0, 10, mancyEdit)) mancyEdit = !mancyEdit;
+	if (GuiSpinner(Rectangle{ textX + 80, textY + 175, 90, 22}, "Attack ", &attackValue, 1, 10, attackEdit)) attackEdit = !attackEdit;
+	if (GuiSpinner(Rectangle{ textX + 80, textY + 200, 90, 22 }, "Defense ", &defenseValue, 1, 10, defenseEdit)) defenseEdit = !defenseEdit;
+	if (GuiSpinner(Rectangle{ textX + 80, textY + 225, 90, 22 }, "Hacking ", &hackingValue, 1, 10, hackingEdit)) hackingEdit = !hackingEdit;
+	if (GuiSpinner(Rectangle{ textX + 80, textY + 250, 90, 22 }, "Healing  ", &healingValue, 1, 10, healingEdit)) healingEdit = !healingEdit;
+	if (GuiSpinner(Rectangle{ textX + 80, textY + 275, 90, 22 }, "Mancy ", &mancyValue, 1, 10, mancyEdit)) mancyEdit = !mancyEdit;
 	if (GuiSpinner(Rectangle{ textX + 80, textY + 300, 90, 22 }, "Negot. ", &negotiationValue, 0, 10, negotiationEdit)) negotiationEdit = !negotiationEdit;
-	if (GuiSpinner(Rectangle{ textX + 80, textY + 325, 90, 22 }, "Stealth ", &stealthValue, 0, 10, stealthEdit)) stealthEdit = !stealthEdit;
-	if (GuiSpinner(Rectangle{ textX + 80, textY + 350, 90, 22 }, "Thievery ", &thieveryValue, 0, 10, thieveryEdit)) thieveryEdit = !thieveryEdit;
-	if (GuiSpinner(Rectangle{ textX + 80, textY + 375, 90, 22 }, "Tumbling ", &tumblingValue, 0, 10, tumblingEdit)) tumblingEdit = !tumblingEdit;
-	if (GuiSpinner(Rectangle{ textX + 80, textY + 400, 90, 22 }, "Vehicles ", &vehiclesValue, 0, 10, vehiclesEdit)) vehiclesEdit = !vehiclesEdit;
+	if (GuiSpinner(Rectangle{ textX + 80, textY + 325, 90, 22 }, "Stealth ", &stealthValue, 1, 10, stealthEdit)) stealthEdit = !stealthEdit;
+	if (GuiSpinner(Rectangle{ textX + 80, textY + 350, 90, 22 }, "Thievery ", &thieveryValue, 1, 10, thieveryEdit)) thieveryEdit = !thieveryEdit;
+	if (GuiSpinner(Rectangle{ textX + 80, textY + 375, 90, 22 }, "Tumbling ", &tumblingValue, 1, 10, tumblingEdit)) tumblingEdit = !tumblingEdit;
+	if (GuiSpinner(Rectangle{ textX + 80, textY + 400, 90, 22 }, "Vehicles ", &vehiclesValue, 1, 10, vehiclesEdit)) vehiclesEdit = !vehiclesEdit;
 
-	if (GuiButton(Rectangle{ textX + 180, textY + 175, 100, 20 }, "Roll"));
+	if (GuiButton(Rectangle{ textX + 180, textY + 175, 100, 20 }, "Roll")) { roll(attackValue, pushChecked, extraD6Checked); };
 	if (GuiButton(Rectangle{ textX + 180, textY + 200, 100, 20 }, "Roll"));
 	if (GuiButton(Rectangle{ textX + 180, textY + 225, 100, 20 }, "Roll"));
 	if (GuiButton(Rectangle{ textX + 180, textY + 250, 100, 20 }, "Roll"));

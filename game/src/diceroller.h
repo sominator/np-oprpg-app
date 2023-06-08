@@ -1,10 +1,10 @@
 #pragma once
 #include <iostream>
 
-void roll(int value, bool pushChecked, bool extraD6Checked)
+void roll(int value, bool pushChecked, bool extraD6Checked, int classBonus)
 {
 	//store all inputted values
-	int all = value + pushChecked + extraD6Checked;
+	int all = value + pushChecked + extraD6Checked + classBonus;
 	
 	//store result
 	int result = 0;
@@ -13,6 +13,7 @@ void roll(int value, bool pushChecked, bool extraD6Checked)
 	std::cout << "Value: " << value << std::endl;
 	std::cout << "pushChecked: " << pushChecked << std::endl;
 	std::cout << "extraD6Checked: " << extraD6Checked << std::endl;
+	std::cout << "classBonus: " << classBonus << std::endl;
 	std::cout << "All: " << all << std::endl;
 
 	//roll d6 for each value

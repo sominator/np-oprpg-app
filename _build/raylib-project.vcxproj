@@ -176,12 +176,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\game\src\diceroller.h" />
-    <ClInclude Include="..\game\src\input.h" />
     <ClInclude Include="..\game\src\chaosrifts.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\game\src\game.cpp" />
-    <ClCompile Include="..\game\src\input.cpp" />
     <ClCompile Include="..\game\src\chaosrifts.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

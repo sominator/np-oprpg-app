@@ -72,7 +72,7 @@ bool chaosToken1Checked = false;
 bool chaosToken2Checked = false;
 bool chaosToken3Checked = false;
 
-void ChaosRifts::Draw()
+void DrawChaosRifts()
 {
 	if (dropDownClassEdit) GuiLock();
 
@@ -145,7 +145,7 @@ void ChaosRifts::Draw()
 				classBonus = 1;
 			}
 		}
-		roll(attackValue, pushChecked, extraD6Checked, classBonus);
+		attackOutput = RollSkill(attackValue, pushChecked, extraD6Checked, classBonus);
 	};
 
 	//defense roll -- auromancers can select to receive a bonus
@@ -162,7 +162,7 @@ void ChaosRifts::Draw()
 				classBonus = 1;
 			}
 		}
-		roll(attackValue, pushChecked, extraD6Checked, classBonus);
+		defenseOutput = RollSkill(defenseValue, pushChecked, extraD6Checked, classBonus);
 	}
 
 	//hacking roll -- technomancers can select to receive a bonus
@@ -179,7 +179,7 @@ void ChaosRifts::Draw()
 				classBonus = 1;
 			}
 		}
-		roll(attackValue, pushChecked, extraD6Checked, classBonus);
+		hackingOutput = RollSkill(hackingValue, pushChecked, extraD6Checked, classBonus);
 	}
 
 	//healing roll -- auromancers and terramancers can select to receive a bonus
@@ -205,7 +205,7 @@ void ChaosRifts::Draw()
 				classBonus = 1;
 			}
 		}
-		roll(attackValue, pushChecked, extraD6Checked, classBonus);
+		healingOutput = RollSkill(healingValue, pushChecked, extraD6Checked, classBonus);
 	}
 
 	//mancy roll -- terramancers can select to receive a bonus
@@ -222,7 +222,7 @@ void ChaosRifts::Draw()
 				classBonus = 1;
 			}
 		}
-		roll(attackValue, pushChecked, extraD6Checked, classBonus);
+		mancyOutput = RollSkill(mancyValue, pushChecked, extraD6Checked, classBonus);
 	}
 
 	//negotiation roll -- revolutionaries can select to receive a bonus
@@ -239,7 +239,7 @@ void ChaosRifts::Draw()
 				classBonus = 1;
 			}
 		}
-		roll(attackValue, pushChecked, extraD6Checked, classBonus);
+		negotiationOutput = RollSkill(negotiationValue, pushChecked, extraD6Checked, classBonus);
 	}
 	
 	//stealth roll - night agents and vanguards can select to receive a bonus
@@ -265,7 +265,7 @@ void ChaosRifts::Draw()
 				classBonus = 1;
 			}
 		}
-		roll(attackValue, pushChecked, extraD6Checked, classBonus);
+		stealthOutput = RollSkill(stealthValue, pushChecked, extraD6Checked, classBonus);
 	}
 	
 	//thievery roll - vanguards can select to receive a bonus
@@ -282,7 +282,7 @@ void ChaosRifts::Draw()
 				classBonus = 1;
 			}
 		}
-		roll(attackValue, pushChecked, extraD6Checked, classBonus);
+		thieveryOutput  = RollSkill(thieveryValue, pushChecked, extraD6Checked, classBonus);
 	}
 	
 	//tumbling roll - night agents can select to receive a bonus
@@ -299,7 +299,7 @@ void ChaosRifts::Draw()
 				classBonus = 1;
 			}
 		}
-		roll(attackValue, pushChecked, extraD6Checked, classBonus);
+		tumblingOutput = RollSkill(tumblingValue, pushChecked, extraD6Checked, classBonus);
 	}
 	
 	//vehicles roll - technomancers can select to receive a bonus
@@ -316,7 +316,7 @@ void ChaosRifts::Draw()
 				classBonus = 1;
 			}
 		}
-		roll(attackValue, pushChecked, extraD6Checked, classBonus);
+		vehiclesOutput = RollSkill(vehiclesValue, pushChecked, extraD6Checked, classBonus);
 	}
 
 	if (GuiValueBox(Rectangle{ textX + 370, textY + 175, 125, 20 }, "Output: ", &attackOutput, 0, 100, attackOutputEdit)) attackOutputEdit = !attackOutputEdit;

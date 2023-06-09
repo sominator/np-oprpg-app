@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-void roll(int value, bool pushChecked, bool extraD6Checked, int classBonus)
+int RollSkill(int value, bool pushChecked, bool extraD6Checked, int classBonus)
 {
 	//store all inputted values
 	int all = value + pushChecked + extraD6Checked + classBonus;
@@ -27,4 +27,6 @@ void roll(int value, bool pushChecked, bool extraD6Checked, int classBonus)
 	//log result to console
 	std::cout << "Result: " << result << std::endl;
 	std::cout << "-----" << std::endl;
+
+	return result;
 }

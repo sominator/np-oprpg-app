@@ -145,7 +145,8 @@ void DrawChaosRifts()
 				classBonus = 1;
 			}
 		}
-		attackOutput = RollSkill(attackValue, pushChecked, extraD6Checked, classBonus);
+		//attackOutput = RollSkill(attackValue, pushChecked, extraD6Checked, classBonus);
+		TestRoll(attackValue, pushChecked, extraD6Checked, classBonus);
 	};
 
 	//defense roll -- auromancers can select to receive a bonus

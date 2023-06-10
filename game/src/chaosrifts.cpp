@@ -47,26 +47,16 @@ bool vehiclesEdit = false;
 bool pushChecked = false;
 bool extraD6Checked = false;
 
-int attackOutput = 0;
-bool attackOutputEdit = false;
-int defenseOutput = 0;
-bool defenseOutputEdit = false;
-int hackingOutput = 0;
-bool hackingOutputEdit = false;
-int healingOutput = 0;
-bool healingOutputEdit = false;
-int mancyOutput = 0;
-bool mancyOutputEdit = false;
-int negotiationOutput = 0;
-bool negotiationOutputEdit = false;
-int stealthOutput = 0;
-bool stealthOutputEdit = false;
-int thieveryOutput = 0;
-bool thieveryOutputEdit = false;
-int tumblingOutput = 0;
-bool tumblingOutputEdit = false;
-int vehiclesOutput = 0;
-bool vehiclesOutputEdit = false;
+std::string attackOutput;
+std::string defenseOutput;
+std::string hackingOutput;
+std::string healingOutput;
+std::string mancyOutput;
+std::string negotiationOutput;
+std::string stealthOutput;
+std::string thieveryOutput;
+std::string tumblingOutput;
+std::string vehiclesOutput;
 
 bool chaosToken1Checked = false;
 bool chaosToken2Checked = false;
@@ -77,12 +67,13 @@ void DrawChaosRifts()
 	if (dropDownClassEdit) GuiLock();
 
 	GuiSetStyle(DEFAULT, TEXT_SIZE, 22);
+	GuiSetStyle(LABEL, TEXT_ALIGNMENT, TEXT_ALIGN_LEFT);
 
 	GuiLabel(Rectangle{ 170, 20, 500, 25 }, "ENTROMANCY: CHAOS RIFTS");
-
+	
 	//panels
-	GuiPanel(Rectangle{ panelX, panelY, 525, 560 }, "Character Info");
-	GuiPanel(Rectangle{ panelX, panelY + 575, 525, 300 }, "GM Info");
+	GuiPanel(Rectangle{ panelX, panelY, 545, 560 }, "Character Info");
+	GuiPanel(Rectangle{ panelX, panelY + 575, 545, 300 }, "GM Info");
 
 	//name text box and HP value box
 	GuiSetStyle(TEXTBOX, TEXT_ALIGNMENT, TEXT_ALIGN_LEFT);
@@ -117,9 +108,8 @@ void DrawChaosRifts()
 	//skills
 	GuiLine(Rectangle{ textX, textY + 130, 500, 30 }, "Skills");
 
-	GuiCheckBox(Rectangle{ textX + 195, textY + 155, 15, 15 }, "Push", &pushChecked);
-	GuiCheckBox(Rectangle{ textX + 295, textY + 155, 15, 15 }, "GM +1d6", &extraD6Checked);
-
+	GuiCheckBox(Rectangle{ textX + 90, textY + 155, 15, 15 }, "Push", &pushChecked);
+	GuiCheckBox(Rectangle{ textX + 180, textY + 155, 15, 15 }, "+1d6", &extraD6Checked);
 	if (GuiSpinner(Rectangle{ textX + 80, textY + 175, 90, 22 }, "Attack ", &attackValue, 1, 10, attackEdit)) attackEdit = !attackEdit;
 	if (GuiSpinner(Rectangle{ textX + 80, textY + 200, 90, 22 }, "Defense ", &defenseValue, 1, 10, defenseEdit)) defenseEdit = !defenseEdit;
 	if (GuiSpinner(Rectangle{ textX + 80, textY + 225, 90, 22 }, "Hacking ", &hackingValue, 1, 10, hackingEdit)) hackingEdit = !hackingEdit;
@@ -132,7 +122,7 @@ void DrawChaosRifts()
 	if (GuiSpinner(Rectangle{ textX + 80, textY + 400, 90, 22 }, "Vehicles ", &vehiclesValue, 1, 10, vehiclesEdit)) vehiclesEdit = !vehiclesEdit;
 
 	//attack roll -- revolutionaries can select to receive a bonus
-	if (GuiButton(Rectangle{ textX + 180, textY + 175, 100, 20 }, "Roll"))
+	if (GuiButton(Rectangle{ textX + 180, textY + 175, 60, 20 }, "Roll"))
 	{
 		std::cout << "Rolling Attack..." << std::endl;
 		int classBonus = 0;
@@ -145,12 +135,11 @@ void DrawChaosRifts()
 				classBonus = 1;
 			}
 		}
-		//attackOutput = RollSkill(attackValue, pushChecked, extraD6Checked, classBonus);
-		TestRoll(attackValue, pushChecked, extraD6Checked, classBonus);
+		attackOutput = RollSkill(attackValue, pushChecked, extraD6Checked, classBonus);
 	};
 
 	//defense roll -- auromancers can select to receive a bonus
-	if (GuiButton(Rectangle{ textX + 180, textY + 200, 100, 20 }, "Roll"))
+	if (GuiButton(Rectangle{ textX + 180, textY + 200, 60, 20 }, "Roll"))
 	{
 		std::cout << "Rolling Defense..." << std::endl;
 		int classBonus = 0;
@@ -167,7 +156,7 @@ void DrawChaosRifts()
 	}
 
 	//hacking roll -- technomancers can select to receive a bonus
-	if (GuiButton(Rectangle{ textX + 180, textY + 225, 100, 20 }, "Roll"))
+	if (GuiButton(Rectangle{ textX + 180, textY + 225, 60, 20 }, "Roll"))
 	{
 		std::cout << "Rolling Hacking..." << std::endl;
 		int classBonus = 0;
@@ -184,7 +173,7 @@ void DrawChaosRifts()
 	}
 
 	//healing roll -- auromancers and terramancers can select to receive a bonus
-	if (GuiButton(Rectangle{ textX + 180, textY + 250, 100, 20 }, "Roll"))
+	if (GuiButton(Rectangle{ textX + 180, textY + 250, 60, 20 }, "Roll"))
 	{
 		std::cout << "Rolling Healing..." << std::endl;
 		int classBonus = 0;
@@ -210,7 +199,7 @@ void DrawChaosRifts()
 	}
 
 	//mancy roll -- terramancers can select to receive a bonus
-	if (GuiButton(Rectangle{ textX + 180, textY + 275, 100, 20 }, "Roll"))
+	if (GuiButton(Rectangle{ textX + 180, textY + 275, 60, 20 }, "Roll"))
 	{
 		std::cout << "Rolling Mancy..." << std::endl;
 		int classBonus = 0;
@@ -227,7 +216,7 @@ void DrawChaosRifts()
 	}
 
 	//negotiation roll -- revolutionaries can select to receive a bonus
-	if (GuiButton(Rectangle{ textX + 180, textY + 300, 100, 20 }, "Roll"))
+	if (GuiButton(Rectangle{ textX + 180, textY + 300, 60, 20 }, "Roll"))
 	{
 		std::cout << "Rolling Negotiation..." << std::endl;
 		int classBonus = 0;
@@ -244,7 +233,7 @@ void DrawChaosRifts()
 	}
 	
 	//stealth roll - night agents and vanguards can select to receive a bonus
-	if (GuiButton(Rectangle{ textX + 180, textY + 325, 100, 20 }, "Roll"))
+	if (GuiButton(Rectangle{ textX + 180, textY + 325, 60, 20 }, "Roll"))
 	{
 		std::cout << "Rolling Stealth..." << std::endl;
 		int classBonus = 0;
@@ -270,7 +259,7 @@ void DrawChaosRifts()
 	}
 	
 	//thievery roll - vanguards can select to receive a bonus
-	if (GuiButton(Rectangle{ textX + 180, textY + 350, 100, 20 }, "Roll"))
+	if (GuiButton(Rectangle{ textX + 180, textY + 350, 60, 20 }, "Roll"))
 	{
 		std::cout << "Rolling Thievery..." << std::endl;
 		int classBonus = 0;
@@ -287,7 +276,7 @@ void DrawChaosRifts()
 	}
 	
 	//tumbling roll - night agents can select to receive a bonus
-	if (GuiButton(Rectangle{ textX + 180, textY + 375, 100, 20 }, "Roll"))
+	if (GuiButton(Rectangle{ textX + 180, textY + 375, 60, 20 }, "Roll"))
 	{
 		std::cout << "Rolling Tumbling..." << std::endl;
 		int classBonus = 0;
@@ -304,7 +293,7 @@ void DrawChaosRifts()
 	}
 	
 	//vehicles roll - technomancers can select to receive a bonus
-	if (GuiButton(Rectangle{ textX + 180, textY + 400, 100, 20 }, "Roll"))
+	if (GuiButton(Rectangle{ textX + 180, textY + 400, 60, 20 }, "Roll"))
 	{
 		std::cout << "Rolling Vehicles..." << std::endl;
 		int classBonus = 0;
@@ -320,16 +309,20 @@ void DrawChaosRifts()
 		vehiclesOutput = RollSkill(vehiclesValue, pushChecked, extraD6Checked, classBonus);
 	}
 
-	if (GuiValueBox(Rectangle{ textX + 370, textY + 175, 125, 20 }, "Output: ", &attackOutput, 0, 100, attackOutputEdit)) attackOutputEdit = !attackOutputEdit;
-	if (GuiValueBox(Rectangle{ textX + 370, textY + 200, 125, 20 }, "Output: ", &defenseOutput, 0, 100, defenseOutputEdit)) defenseOutputEdit = !defenseOutputEdit;
-	if (GuiValueBox(Rectangle{ textX + 370, textY + 225, 125, 20 }, "Output: ", &hackingOutput, 0, 100, hackingOutputEdit)) hackingOutputEdit = !hackingOutputEdit;
-	if (GuiValueBox(Rectangle{ textX + 370, textY + 250, 125, 20 }, "Output: ", &healingOutput, 0, 100, healingOutputEdit)) healingOutputEdit = !healingOutputEdit;
-	if (GuiValueBox(Rectangle{ textX + 370, textY + 275, 125, 20 }, "Output: ", &mancyOutput, 0, 100, mancyOutputEdit)) mancyOutputEdit = !mancyOutputEdit;
-	if (GuiValueBox(Rectangle{ textX + 370, textY + 300, 125, 20 }, "Output: ", &negotiationOutput, 0, 100, negotiationOutputEdit)) negotiationOutputEdit = !negotiationOutputEdit;
-	if (GuiValueBox(Rectangle{ textX + 370, textY + 325, 125, 20 }, "Output: ", &stealthOutput, 0, 100, stealthOutputEdit)) stealthOutputEdit = !stealthOutputEdit;
-	if (GuiValueBox(Rectangle{ textX + 370, textY + 350, 125, 20 }, "Output: ", &thieveryOutput, 0, 100, thieveryOutputEdit)) thieveryOutputEdit = !thieveryOutputEdit;
-	if (GuiValueBox(Rectangle{ textX + 370, textY + 375, 125, 20 }, "Output: ", &tumblingOutput, 0, 100, tumblingOutputEdit)) tumblingOutputEdit = !tumblingOutputEdit;
-	if (GuiValueBox(Rectangle{ textX + 370, textY + 400, 125, 20 }, "Output: ", &vehiclesOutput, 0, 100, vehiclesOutputEdit)) vehiclesOutputEdit = !vehiclesOutputEdit;
+	//roll outputs
+	GuiSetStyle(LABEL, TEXT_ALIGNMENT, TEXT_ALIGN_CENTER);
+	GuiLabel(Rectangle{ textX + 235, textY + 150, 300, 20 }, "Output");
+	GuiLabel(Rectangle{ textX + 240, textY + 175, 300, 20 }, attackOutput.c_str());
+	GuiLabel(Rectangle{ textX + 240, textY + 200, 300, 20 }, defenseOutput.c_str());
+	GuiLabel(Rectangle{ textX + 240, textY + 225, 300, 20 }, hackingOutput.c_str());
+	GuiLabel(Rectangle{ textX + 240, textY + 250, 300, 20 }, healingOutput.c_str());
+	GuiLabel(Rectangle{ textX + 240, textY + 275, 300, 20 }, mancyOutput.c_str());
+	GuiLabel(Rectangle{ textX + 240, textY + 300, 300, 20 }, negotiationOutput.c_str());
+	GuiLabel(Rectangle{ textX + 240, textY + 325, 300, 20 }, stealthOutput.c_str());
+	GuiLabel(Rectangle{ textX + 240, textY + 350, 300, 20 }, thieveryOutput.c_str());
+	GuiLabel(Rectangle{ textX + 240, textY + 375, 300, 20 }, tumblingOutput.c_str());
+	GuiLabel(Rectangle{ textX + 240, textY + 400, 300, 20 }, vehiclesOutput.c_str());
+	GuiSetStyle(LABEL, TEXT_ALIGNMENT, TEXT_ALIGN_LEFT);
 
 	//missions
 	GuiLine(Rectangle{ textX, textY + 430, 500, 30 }, "Mission Objective");

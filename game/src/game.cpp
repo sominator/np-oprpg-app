@@ -3,6 +3,7 @@
 #define RAYGUI_IMPLEMENTATION
 #include "raygui.h"
 #include "styles/cyber.h"
+#include <iostream>
 
 int main(void)
 {
@@ -14,6 +15,9 @@ int main(void)
 	SetTargetFPS(60);
 
 	GuiLoadStyleCyber();
+
+	//seed randomizer
+	srand(time(nullptr));
 
 	while (!WindowShouldClose())
 	{

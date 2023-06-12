@@ -67,3 +67,8 @@ int RollSkillOLD(int value, bool pushChecked, bool extraD6Checked, int classBonu
 
 	return result;
 }
+
+int RollText(int number)
+{
+	return (rand() % number);
+}

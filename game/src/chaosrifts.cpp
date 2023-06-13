@@ -439,12 +439,6 @@ namespace ChaosRifts
 		GuiCheckBox(Rectangle{ textX + 200, textY + 895, 15, 15 }, "Token 2", &chaosToken2Checked);
 		GuiCheckBox(Rectangle{ textX + 350, textY + 895, 15, 15 }, "Token 3", &chaosToken3Checked);
 
-		//back button
-		if (GuiButton({ textX + 400, textY + 960, 100, 24 }, "Back"))
-		{
-			//back to menu
-		};
-
 		//class dropdown
 		GuiUnlock();
 		GuiSetStyle(DROPDOWNBOX, TEXT_ALIGNMENT, TEXT_ALIGN_LEFT);

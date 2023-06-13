@@ -1,3 +1,3 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: The intermediate directory (obj\x64\Debug\raylib-project\) contains files shared from another project (raylib-card-game.vcxproj, raylib-gui.vcxproj, raylib-hacker-battles.vcxproj, raylib-project.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  gameturkeys.cpp
+  codeisattvas.cpp
   raylib-project.vcxproj -> C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\_bin\Debug\raylib-gui.exe

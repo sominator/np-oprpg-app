@@ -1,6 +1,5 @@
 #include "gameturkeys.h"
 #include "diceroller.h"
-#include <iostream>
 
 namespace GameTurkeys 
 {
@@ -112,7 +111,7 @@ namespace GameTurkeys
 		"You're thrown into responding to a REVIEW BOMB by\n"
 		"players disgruntled by a recent update. Each game dev\n"
 		"rolls Communications, Public Relations, or Technical.\n"
-		"Success grants you + 1 Inspiration Points, even above\n"
+		"Success grants you +1 Inspiration Points, even above\n"
 		"the normal amount of 3; failure removes 1 Inspiration\n"
 		"Point. Reset the Burnout Meter."
 	};
@@ -128,7 +127,7 @@ namespace GameTurkeys
 		GuiSetStyle(DEFAULT, TEXT_SIZE, 22);
 		GuiSetStyle(LABEL, TEXT_ALIGNMENT, TEXT_ALIGN_LEFT);
 
-		GuiLabel(Rectangle{ 170, 20, 500, 25 }, "GAME TURKEYS");
+		GuiLabel(Rectangle{ 250, 20, 500, 25 }, "GAME TURKEYS");
 
 		//panels
 		GuiPanel(Rectangle{ panelX, panelY, 545, 560 }, "Character Info");
@@ -167,7 +166,7 @@ namespace GameTurkeys
 		//skills
 		GuiLine(Rectangle{ textX, textY + 130, 500, 30 }, "Skills");
 
-		GuiCheckBox(Rectangle{ textX + 90, textY + 155, 15, 15 }, "Push", &stretchChecked);
+		GuiCheckBox(Rectangle{ textX + 90, textY + 155, 15, 15 }, "Stretch", &stretchChecked);
 		GuiCheckBox(Rectangle{ textX + 180, textY + 155, 15, 15 }, "+1d6", &extraD6Checked);
 		if (GuiSpinner(Rectangle{ textX + 80, textY + 175, 90, 22 }, "Business ", &businessValue, 1, 10, businessEdit)) businessEdit = !businessEdit;
 		if (GuiSpinner(Rectangle{ textX + 80, textY + 200, 90, 22 }, "Comms. ", &communicationsValue, 1, 10, communicationsEdit)) communicationsEdit = !communicationsEdit;
@@ -336,10 +335,9 @@ namespace GameTurkeys
 		//rally roll
 		if (GuiButton(Rectangle{ textX + 180, textY + 325, 60, 20 }, "Roll"))
 		{
-			int roleBonus = 0;
 			std::cout << "Rolling Rally..." << std::endl;
 			
-			rallyOutput = RollSkill(rallyValue, stretchChecked, extraD6Checked, roleBonus);
+			rallyOutput = RollSkill(rallyValue, stretchChecked, extraD6Checked, 0);
 		}
 
 		//roll outputs
@@ -382,19 +380,13 @@ namespace GameTurkeys
 		GuiLabel(Rectangle{ textX + 120, textY + 720, 400, 100 }, teamPanicText.c_str());
 		GuiSetStyle(DEFAULT, TEXT_SIZE, 22);
 
-		//chaos meter
+		//burnout meter
 		GuiLine(Rectangle{ textX, textY + 865, 500, 30 }, "Burnout Meter");
 		GuiCheckBox(Rectangle{ textX + 50, textY + 895, 15, 15 }, "Token 1", &burnoutCounter1Checked);
 		GuiCheckBox(Rectangle{ textX + 200, textY + 895, 15, 15 }, "Token 2", &burnoutCounter2Checked);
 		GuiCheckBox(Rectangle{ textX + 350, textY + 895, 15, 15 }, "Token 3", &burnoutCounter3Checked);
 
-		//back button
-		if (GuiButton({ textX + 400, textY + 960, 100, 24 }, "Back"))
-		{
-			//back to menu
-		};
-
-		//class dropdown
+		//role dropdown
 		GuiUnlock();
 		GuiSetStyle(DROPDOWNBOX, TEXT_ALIGNMENT, TEXT_ALIGN_LEFT);
 		if (GuiDropdownBox(Rectangle{ textX, textY + 80, 500, 30 },

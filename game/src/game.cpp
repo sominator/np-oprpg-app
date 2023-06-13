@@ -1,10 +1,12 @@
 #include "raylib-cpp-master/include/raylib-cpp.hpp"
 #include "chaosrifts.h"
 #include "gameturkeys.h"
+#include "codeisattvas.h"
 #define RAYGUI_IMPLEMENTATION
 #include "raygui.h"
 #include "styles/cyber/cyber.h"
 #include "styles/candy/candy.h"
+#include "styles/jungle/jungle.h"
 #include <iostream>
 
 int main(void)
@@ -17,7 +19,8 @@ int main(void)
 	SetTargetFPS(60);
 
 	//GuiLoadStyleCyber();
-	GuiLoadStyleCandy();
+	//GuiLoadStyleCandy();
+	GuiLoadStyleJungle();
 
 	//seed randomizer
 	srand(time(nullptr));
@@ -30,7 +33,8 @@ int main(void)
 			window.ClearBackground(BLACK);
 			
 			//DrawChaosRifts();
-			GameTurkeys::DrawGameTurkeys();
+			//GameTurkeys::DrawGameTurkeys();
+			Codeisattvas::DrawCodeisattvas();
 		}
 		EndDrawing();
 	}

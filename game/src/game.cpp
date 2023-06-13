@@ -2,11 +2,13 @@
 #include "chaosrifts.h"
 #include "gameturkeys.h"
 #include "codeisattvas.h"
+#include "nssv.h"
 #define RAYGUI_IMPLEMENTATION
 #include "raygui.h"
 #include "styles/cyber/cyber.h"
 #include "styles/candy/candy.h"
 #include "styles/jungle/jungle.h"
+#include "styles/lavanda/lavanda.h"
 #include <iostream>
 
 int main(void)
@@ -20,7 +22,8 @@ int main(void)
 
 	//GuiLoadStyleCyber();
 	//GuiLoadStyleCandy();
-	GuiLoadStyleJungle();
+	//GuiLoadStyleJungle();
+	GuiLoadStyleLavanda();
 
 	//seed randomizer
 	srand(time(nullptr));
@@ -32,9 +35,10 @@ int main(void)
 		{
 			window.ClearBackground(BLACK);
 			
-			//DrawChaosRifts();
+			//ChaosRifts::DrawChaosRifts();
 			//GameTurkeys::DrawGameTurkeys();
-			Codeisattvas::DrawCodeisattvas();
+			//Codeisattvas::DrawCodeisattvas();
+			NSSV::DrawNSSV();
 		}
 		EndDrawing();
 	}

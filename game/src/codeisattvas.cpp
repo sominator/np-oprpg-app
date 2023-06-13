@@ -133,7 +133,7 @@ namespace Codeisattvas
 		if (GuiSpinner(Rectangle{ textX + 83, textY + 230, 90, 22 }, "Patience ", &patienceValue, 1, 10, patienceEdit)) patienceEdit = !patienceEdit;
 		if (GuiSpinner(Rectangle{ textX + 83, textY + 255, 90, 22 }, "Dilig. ", &diligenceValue, 1, 10, diligenceEdit)) diligenceEdit = !diligenceEdit;
 		if (GuiSpinner(Rectangle{ textX + 83, textY + 280, 90, 22 }, "Conc. ", &concentrationValue, 1, 10, concentrationEdit)) concentrationEdit = !concentrationEdit;
-		if (GuiSpinner(Rectangle{ textX + 83, textY + 305, 90, 22 }, "Wisdom ", &wisdomValue, 0, 10, wisdomEdit)) wisdomEdit = !wisdomEdit;
+		if (GuiSpinner(Rectangle{ textX + 83, textY + 305, 90, 22 }, "Wisdom ", &wisdomValue, 1, 10, wisdomEdit)) wisdomEdit = !wisdomEdit;
 		if (GuiSpinner(Rectangle{ textX + 83, textY + 330, 90, 22 }, "Restore ", &restoreValue, 1, 1, restoreEdit)) restoreEdit = !restoreEdit;
 
 		//generosity roll

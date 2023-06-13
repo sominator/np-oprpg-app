@@ -190,7 +190,7 @@ void DrawChaosRifts()
 	if (GuiSpinner(Rectangle{ textX + 80, textY + 175, 90, 22 }, "Attack ", &attackValue, 1, 10, attackEdit)) attackEdit = !attackEdit;
 	if (GuiSpinner(Rectangle{ textX + 80, textY + 200, 90, 22 }, "Defense ", &defenseValue, 1, 10, defenseEdit)) defenseEdit = !defenseEdit;
 	if (GuiSpinner(Rectangle{ textX + 80, textY + 225, 90, 22 }, "Hacking ", &hackingValue, 1, 10, hackingEdit)) hackingEdit = !hackingEdit;
-	if (GuiSpinner(Rectangle{ textX + 80, textY + 250, 90, 22 }, "Healing  ", &healingValue, 1, 10, healingEdit)) healingEdit = !healingEdit;
+	if (GuiSpinner(Rectangle{ textX + 80, textY + 250, 90, 22 }, "Healing ", &healingValue, 1, 10, healingEdit)) healingEdit = !healingEdit;
 	if (GuiSpinner(Rectangle{ textX + 80, textY + 275, 90, 22 }, "Mancy ", &mancyValue, 1, 10, mancyEdit)) mancyEdit = !mancyEdit;
 	if (GuiSpinner(Rectangle{ textX + 80, textY + 300, 90, 22 }, "Negot. ", &negotiationValue, 0, 10, negotiationEdit)) negotiationEdit = !negotiationEdit;
 	if (GuiSpinner(Rectangle{ textX + 80, textY + 325, 90, 22 }, "Stealth ", &stealthValue, 1, 10, stealthEdit)) stealthEdit = !stealthEdit;

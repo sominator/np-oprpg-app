@@ -1,4 +1,4 @@
-#include <diceroller.h>
+#include "diceroller.h"
 
 std::string RollSkill(int value, bool pushChecked, bool extraD6Checked, int bonus)
 {

@@ -1,5 +1,4 @@
 #include "raylib-cpp-master/include/raylib-cpp.hpp"
-#include "menu.h"
 #include "chaosrifts.h"
 #include "gameturkeys.h"
 #include "codeisattvas.h"
@@ -31,8 +30,8 @@ int main(void)
 	const int screenWidth = 640;
 	const int screenHeight = 1136;
 
-	raylib::Window window(screenWidth, screenHeight, "raylib-gui-oprpg-app");
-	raylib::Texture2D logo("resources/NPLogo1.png");
+	raylib::Window window(screenWidth, screenHeight, "Nightpath Publishing One-Page RPGs");
+	raylib::Texture2D logo("NPLogo1.png");
 
 	SetTargetFPS(60);
 
@@ -52,7 +51,6 @@ int main(void)
 			switch (currentScene)
 			{
 			case MenuScene:
-				
 				logo.Draw(raylib::Vector2(70, 50), 0.0f, 0.35f);
 				DrawMenu();
 				break;

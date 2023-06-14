@@ -1,0 +1,15 @@
+﻿  codeisattvas.cpp
+  diceroller.cpp
+  game.cpp
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\raygui.h(2317,113): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\raygui.h(2320,62): warning C4018: '>': signed/unsigned mismatch
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\raygui.h(2355,56): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\raygui.h(2375,78): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\raygui.h(2400,44): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\raylib-master\src\raygui.h(4147,5): warning C4065: switch statement contains 'default' but no 'case' labels
+C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\game\src\game.cpp(41,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  chaosrifts.cpp
+  gameturkeys.cpp
+  nssv.cpp
+  Generating Code...
+  raylib-project.vcxproj -> C:\Users\Som\coding\cplusplus\raylib-gui-oprpg-app\x64\Release\np-oprpg-app.exe

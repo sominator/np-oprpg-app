@@ -1,0 +1,43 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31933.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/game/src/diceroller.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "baa02f71db453e9540030ef2416f78a0131f10d0710f8a1a39da42a73938010a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/game/src/diceroller.h"
+          },
+          "hashes": {
+            "sha-256": "ee2af6bcafd3cf898c2c6a16774ea3fefbf3380947d6eaf9875811cdc999f068"
+          }
+        }
+      ]
+    }
+  ]
+}

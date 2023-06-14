@@ -69,9 +69,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\_bin\Debug\</OutDir>
     <IntDir>obj\x64\Debug\raylib-project\</IntDir>
-    <TargetName>raylib-gui</TargetName>
+    <TargetName>np-oprpg-app</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -83,9 +82,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\_bin\Release\</OutDir>
     <IntDir>obj\x64\Release\raylib-project\</IntDir>
-    <TargetName>raylib-gui</TargetName>
+    <TargetName>np-oprpg-app</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

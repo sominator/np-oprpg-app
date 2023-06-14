@@ -1,0 +1,783 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/AudioStream.hpp"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 5,
+                  "endLine": 37,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "raylib::AudioStream::{ctor}",
+                  "decoratedName": "??0AudioStream@raylib@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Material.hpp"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 5,
+                  "endLine": 29,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "raylib::Material::{ctor}",
+                  "decoratedName": "??0Material@raylib@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Image.hpp"
+                },
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 5,
+                  "endLine": 99,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "raylib::Image::{ctor}",
+                  "decoratedName": "??0Image@raylib@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Font.hpp"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 5,
+                  "endLine": 88,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "raylib::Font::{ctor}",
+                  "decoratedName": "??0Font@raylib@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Model.hpp"
+                },
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 5,
+                  "endLine": 52,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "raylib::Model::{ctor}",
+                  "decoratedName": "??0Model@raylib@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Mesh.hpp"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 5,
+                  "endLine": 33,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "raylib::Mesh::{ctor}",
+                  "decoratedName": "??0Mesh@raylib@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/ModelAnimation.hpp"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 5,
+                  "endLine": 23,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "raylib::ModelAnimation::{ctor}",
+                  "decoratedName": "??0ModelAnimation@raylib@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Music.hpp"
+                },
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 5,
+                  "endLine": 46,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "raylib::Music::{ctor}",
+                  "decoratedName": "??0Music@raylib@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/RenderTexture.hpp"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 5,
+                  "endLine": 38,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "raylib::RenderTexture::{ctor}",
+                  "decoratedName": "??0RenderTexture@raylib@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Texture.hpp"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 5,
+                  "endLine": 31,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "raylib::Texture::{ctor}",
+                  "decoratedName": "??0Texture@raylib@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Shader.hpp"
+                },
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 5,
+                  "endLine": 32,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "raylib::Shader::{ctor}",
+                  "decoratedName": "??0Shader@raylib@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Sound.hpp"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 5,
+                  "endLine": 33,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "raylib::Sound::{ctor}",
+                  "decoratedName": "??0Sound@raylib@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Wave.hpp"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 5,
+                  "endLine": 51,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "raylib::Wave::{ctor}",
+                  "decoratedName": "??0Wave@raylib@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31933.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/AudioStream.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "50953c6454e574da4f28c15a7fa30f5b2d36a9bc355a8a43e68963ccb6ce6c8f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Material.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "3ea71227d1558278d0242d6601829235bccd15a80ce539bed9127e59804b8d79"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Image.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "4dc33040aecfddf06fecdfd2d1f52382fb0f9d73970e15cb91cb87cba145abb9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Font.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "d81a2f315fbe4ec030ab496baf51be7622fb7ca7591d1ab4c01be7254d4b1209"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Model.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "9fe86e886f867323b3ed7fe4409a23f2debb7f234724897af116964abd35ad54"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Mesh.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "42646a39bef420df83ffed7d1ec23c6b31b39f75a6f3c242fe5e4193c92f03e7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/ModelAnimation.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "c097b40515ec08b9046104b5904bbb9abbe661cef1f5eae1642c84d04059519b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Music.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "6fb0be7613cd9cb0328bc12443ac952821e7e17aeea19a0ab2460a1a7bfa1d43"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/RenderTexture.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "7feedda2e4f5c397a65a1558228251f0e06e424dd0d330378cf776dc2cdc3cc7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Texture.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "a17091a0602934153468037bceeef2beb3d98f1d3d46c1040e7e39583612fb43"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Shader.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "dfb0bcf12fe9c5215fadd4937c4497a9b6570f72eeb6fd7cbd214a97c33d0896"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Sound.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "36322c5f20c97d88c76299c13ee3790bba1788ef90beb0e381cff5649ee26f69"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/Wave.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "bbfda4747a984f17be2543944abf4ffe3a8c24b3c38d896b6145a6f305b9a8cc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/game/src/gameturkeys.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "9ed35f1064b5b1fc15cd0309778132298d7ce885ed130ed3e3ef8504d1a54f83"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/game/src/gameturkeys.h"
+          },
+          "hashes": {
+            "sha-256": "caffa64c615b8209452812e5c9c56865f09f2d1c177f7ab1f9a435d6fbcb2beb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/raylib-cpp.hpp"
+          },
+          "hashes": {
+            "sha-256": "fa6ddf230798b66acbbae23d91364bec8efa58c183d8890a9f9fbd1c6dfe70ee"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/audiodevice.hpp"
+          },
+          "hashes": {
+            "sha-256": "e114bd4ba66bc6794a04b821c3280d80ffe1837f13a210bd6becb7384283c367"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/raylib.hpp"
+          },
+          "hashes": {
+            "sha-256": "ba064fb20e451ff82bb63b0bb5bc8a336f778ba1bef1cd4830661762345e0fca"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib.h"
+          },
+          "hashes": {
+            "sha-256": "bb6c06f6eeaa07184e9e5316c0e0de53b3efc15f286028e03e44201eec73393a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/raylib-cpp-utils.hpp"
+          },
+          "hashes": {
+            "sha-256": "e284872f41fea8e2ed82f09aeb5cbd933161b916602ac94a5fcb772292ffaa68"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/raylibexception.hpp"
+          },
+          "hashes": {
+            "sha-256": "5540468d110a15372a3c98f210b363f68ac52f771be812a73d18f7a163b86075"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/boundingbox.hpp"
+          },
+          "hashes": {
+            "sha-256": "d2d63fcb3d4fdcb5fc4a5df3ff830cca70001c3f249a5a3fceef91b3510a1c9f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/camera2d.hpp"
+          },
+          "hashes": {
+            "sha-256": "26afc7ce419e637ff097e792aca54dd0935580a244c2e914fe7dd122565fcf5b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/vector2.hpp"
+          },
+          "hashes": {
+            "sha-256": "62cdddab861237928fd92c10d78f13cf939d8b0a6f6700f2c8c9bcc3fa65619e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/raymath.hpp"
+          },
+          "hashes": {
+            "sha-256": "ef4b0b0c4ef8191ef07227b16cd46f0c42b168d2d8260218639335bbae09b8ff"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raymath.h"
+          },
+          "hashes": {
+            "sha-256": "93ac976d378f3a0f7bb4b8c4e19f998d7ff40a32c079ccd0b2f1acd67e56229c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/camera3d.hpp"
+          },
+          "hashes": {
+            "sha-256": "81a64d163a7d2f397d61764ed696820d7294545c2e865cbc5b4c14d060a714df"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/vector3.hpp"
+          },
+          "hashes": {
+            "sha-256": "388fb83b0200c8eb787339e5f5c1b18a552484c859787bcbe759b8bdb61f92c6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/color.hpp"
+          },
+          "hashes": {
+            "sha-256": "ee6fcae2e10f9fcb2afd13af8a462fdbb86b63706e3c36dfce48b20756221831"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/vector4.hpp"
+          },
+          "hashes": {
+            "sha-256": "030acdaefce4120d7dfe4bacd3ff618d8233bde5e148e1b76ef6a2dee6cc40a0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/textureunmanaged.hpp"
+          },
+          "hashes": {
+            "sha-256": "4dc0eacf1a03f0b9d0346babdb5f9335404a69e589e8daec72ae8a211f277970"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/functions.hpp"
+          },
+          "hashes": {
+            "sha-256": "1244a2328454057015f8b3021acdf3d39080ec741a78bf08efaf261ce2d2b8e0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/gamepad.hpp"
+          },
+          "hashes": {
+            "sha-256": "0eb431f55a5a61c2c6ba1cb99d087164e0211a0924280b1fd791b5af96915e92"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/matrix.hpp"
+          },
+          "hashes": {
+            "sha-256": "41bbe9281c9030361a38f47b96a4c752ddad9b26fe93125c331249a1e8736aa7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/mouse.hpp"
+          },
+          "hashes": {
+            "sha-256": "b49a353f4c29de46275612012cee38ea9aa24db98d297d42393ade0250455249"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/ray.hpp"
+          },
+          "hashes": {
+            "sha-256": "836b5c103af49b7a6fe25f28b6a875013c2bc20bedc6106d02444055294e1009"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/raycollision.hpp"
+          },
+          "hashes": {
+            "sha-256": "fca89f57ffec0d1fd87d71d1a7dbf40f051dccdfebac87092f33225bfa0377c3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/rectangle.hpp"
+          },
+          "hashes": {
+            "sha-256": "79b370c932f655e03545382bb8c0a2b3cc5f57ac419751c5b8832c70d9cc5b24"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/text.hpp"
+          },
+          "hashes": {
+            "sha-256": "6ecc6f9023bac4e51e5f917ed6853ea55bd0fc8c3d0d880a53deaa1d351d58cc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/touch.hpp"
+          },
+          "hashes": {
+            "sha-256": "fc57694561642fbee0ea78b2cb7e03bb9743891a2cc030b5c09746ab8d2a4b12"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/vrstereoconfig.hpp"
+          },
+          "hashes": {
+            "sha-256": "87a65b3038727ac3c606d86abd856eaab7d7c04347f0175cddd9027f38e02c83"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raylib-cpp-master/include/window.hpp"
+          },
+          "hashes": {
+            "sha-256": "79814b505d5257e53c6b742523733576fb424d491969cc22a724ea4154783b42"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/raylib-master/src/raygui.h"
+          },
+          "hashes": {
+            "sha-256": "6494635338cae6405789417ba1c6e6f6f0ee25d4e4ca197f1f5540e7d63a4021"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/som/coding/cplusplus/raylib-gui-oprpg-app/game/src/diceroller.h"
+          },
+          "hashes": {
+            "sha-256": "ee2af6bcafd3cf898c2c6a16774ea3fefbf3380947d6eaf9875811cdc999f068"
+          }
+        }
+      ]
+    }
+  ]
+}

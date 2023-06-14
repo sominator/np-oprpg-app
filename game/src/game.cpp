@@ -12,6 +12,7 @@
 #include "styles/lavanda/lavanda.h"
 #include <iostream>
 
+//enum to store scenes
 enum Scenes
 {
 	MenuScene,
@@ -47,6 +48,7 @@ int main(void)
 		{
 			window.ClearBackground(BLACK);
 			
+			//draw scene based on the current one selected
 			switch (currentScene)
 			{
 			case MenuScene:
@@ -86,6 +88,7 @@ int main(void)
 	return 0;
 }
 
+//draw menu with buttons to switch between scenes
 void DrawMenu()
 {
 	GuiSetStyle(DEFAULT, TEXT_SIZE, 42);

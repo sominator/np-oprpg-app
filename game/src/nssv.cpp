@@ -4,6 +4,7 @@
 
 namespace NSSV
 {
+	//initialize variables
 	float panelX = 50.0f;
 	float panelY = 60.0f;
 	float textX = 60.0f;

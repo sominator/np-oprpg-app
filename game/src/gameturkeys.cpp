@@ -3,6 +3,7 @@
 
 namespace GameTurkeys 
 {
+	//initialize variables
 	float panelX = 50.0f;
 	float panelY = 60.0f;
 	float textX = 60.0f;
@@ -14,6 +15,7 @@ namespace GameTurkeys
 	int ipValue = 3;
 	bool ipEdit = false;
 
+	//set up role choices
 	enum RoleChoice
 	{
 		Artist,
@@ -40,6 +42,7 @@ namespace GameTurkeys
 	int toggleProducerActive = FirstSkill;
 	int toggleQATesterActive = FirstSkill;
 
+	//initialize skill values
 	int businessValue = 1;
 	bool businessEdit = false;
 	int communicationsValue = 1;
@@ -58,6 +61,7 @@ namespace GameTurkeys
 	bool stretchChecked = false;
 	bool extraD6Checked = false;
 
+	//initialize skill roll outputs
 	std::string businessOutput;
 	std::string communicationsOutput;
 	std::string designOutput;

@@ -6,6 +6,4 @@
 
 std::string RollSkill(int value, bool pushChecked, bool extraD6Checked, int bonus);
 
-int RollSkillOLD(int value, bool pushChecked, bool extraD6Checked, int classBonus);
-
 int RollText(int number);

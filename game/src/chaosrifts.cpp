@@ -4,6 +4,7 @@
 
 namespace ChaosRifts
 {
+	//initialize variables
 	float panelX = 50.0f;
 	float panelY = 60.0f;
 	float textX = 60.0f;
@@ -15,6 +16,7 @@ namespace ChaosRifts
 	int hpValue = 3;
 	bool hpEdit = false;
 
+	//set up class choices
 	enum ClassChoice
 	{
 		Auromancer,
@@ -41,6 +43,7 @@ namespace ChaosRifts
 	int toggleTerramancerActive = FirstSkill;
 	int toggleVanguardActive = FirstSkill;
 
+	//initialize skill values
 	int attackValue = 1;
 	bool attackEdit = false;
 	int defenseValue = 1;
@@ -65,6 +68,7 @@ namespace ChaosRifts
 	bool pushChecked = false;
 	bool extraD6Checked = false;
 
+	//initialize skill roll outputs
 	std::string attackOutput;
 	std::string defenseOutput;
 	std::string hackingOutput;

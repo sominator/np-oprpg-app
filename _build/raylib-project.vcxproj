@@ -179,7 +179,6 @@
     <ClInclude Include="..\game\src\diceroller.h" />
     <ClInclude Include="..\game\src\chaosrifts.h" />
     <ClInclude Include="..\game\src\gameturkeys.h" />
-    <ClInclude Include="..\game\src\menu.h" />
     <ClInclude Include="..\game\src\nssv.h" />
   </ItemGroup>
   <ItemGroup>
@@ -188,7 +187,6 @@
     <ClCompile Include="..\game\src\game.cpp" />
     <ClCompile Include="..\game\src\chaosrifts.cpp" />
     <ClCompile Include="..\game\src\gameturkeys.cpp" />
-    <ClCompile Include="..\game\src\menu.cpp" />
     <ClCompile Include="..\game\src\nssv.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

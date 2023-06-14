@@ -50,23 +50,20 @@ int main(void)
 			switch (currentScene)
 			{
 			case MenuScene:
-				logo.Draw(50, 50, WHITE);
+				
+				logo.Draw(raylib::Vector2(70, 50), 0.0f, 0.35f);
 				DrawMenu();
 				break;
 			case ChaosRiftsScene:
-				logo.Draw(50, 50, WHITE);
 				ChaosRifts::DrawChaosRifts();
 				break;
 			case GameTurkeysScene:
-				logo.Draw(50, 50, WHITE);
 				GameTurkeys::DrawGameTurkeys();
 				break;
 			case CodeisattvasScene:
-				logo.Draw(50, 50, WHITE);
 				Codeisattvas::DrawCodeisattvas();
 				break;
 			case NSSVScene:
-				logo.Draw(50, 50, WHITE);
 				NSSV::DrawNSSV();
 				break;
 			default:
@@ -113,4 +110,7 @@ void DrawMenu()
 		GuiLoadStyleLavanda();
 		currentScene = NSSVScene;
 	};
+
+	GuiSetStyle(DEFAULT, TEXT_SIZE, 22);
+	GuiLabel(Rectangle{ 65, 1025, 550, 20 }, "Download one-page RPGs and more at nightpathpub.com");
 }

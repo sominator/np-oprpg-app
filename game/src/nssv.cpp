@@ -103,14 +103,13 @@ namespace NSSV
 		"the normal amount of 3; failure removes 1 Health.\n"
 		"Reset the Fail Meter.",
 		//line break for readability
-		"If you haven’t already entered a Superhero Battle,\n"
-		"roll 1d4 again to enter a different one. Otherwise,"
-		"you’ve attracted the ire of the Cosmic Squad.\n"
-		"Each player rolls a skill of their choice. A success\n"
-		"by all players automatically completes one of your\n"
-		"Encounters (GM's choice) and resets the Fail Meter;\n"
-		"a failure by all players ends the game. A	combination\n"
-		"resets the Fail Meter, with no benefit or penalty."
+		"If you haven't already entered a Superhero Battle, roll\n"
+		"1d4 again to enter a different one. Otherwise, you've\n"
+		"attracted the ire of the Cosmic Squad. Each player rolls\n"
+		"a skill of their choice. A success by all players\n"
+		"automatically completes one of your Encounters (GM's\n"
+		"choice) and resets the Fail Meter; a failure by all players\n"
+		"ends the game. A combination resets the fail meter."
 	};
 
 	bool failMeterCounter1Checked = false;
